@@ -69,7 +69,7 @@ function Contact() {
           {/* MAP */}
           <div className="map">
             <iframe
-              src="https://maps.google.com/maps?q=melbourne&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=rangpur%20city&t=&z=13&ie=UTF8&iwloc=&output=embed"
               title="map"
             ></iframe>
           </div>
