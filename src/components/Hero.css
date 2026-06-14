@@ -1,0 +1,107 @@
+.hero{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  background: #0f172a;
+  color: white;
+  gap: 40px;
+}
+
+/* Left */
+.hero-left{
+  flex: 1;
+}
+
+.hero-left h4{
+  font-size: 18px;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.hero-left h1{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero-left h3{
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.typing-skill{
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+.hero-left p{
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+/* Buttons */
+.hero-btns{
+  display: flex;
+  gap: 20px;
+}
+
+.btn{
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary{
+  background: #38bdf8;
+  color: black;
+}
+
+.primary:hover{
+  background: white;
+  color: #0f172a;
+}
+
+.secondary{
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.secondary:hover{
+  background: #38bdf8;
+  color: black;
+}
+
+/* Right Image */
+.hero-right{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right img{
+  width: 400px;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Responsive */
+@media(max-width: 992px){
+  .hero{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-left p{
+    margin: 0 auto 30px;
+  }
+
+  .hero-btns{
+    justify-content: center;
+  }
+}

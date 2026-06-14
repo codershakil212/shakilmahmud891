@@ -1,0 +1,251 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background: rgb(0, 0, 33);
+     color: white;
+ }
+
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 15px 20px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger{
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Mobile Responsive */
+@media(max-width: 768px){
+
+    .nav-links{
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: black;
+        flex-direction: column;
+        width: 200px;
+        display: none;
+        padding: 20px;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+}
+
+ /* Hamburger */
+
+ .hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+ /* Nav Design */
+
+ .nav {
+     height: 97px;
+     background: rgb(20, 20, 72);
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .rightsec ul {
+     display: flex;
+     align-items: center;
+     list-style-type: none;
+ }
+
+ .rightsec ul li a {
+     margin: 0 23px;
+     color: white;
+     text-decoration: none;
+ }
+
+ /* First-Section Start Here*/
+
+ .firstsec {
+     margin: 23px 0;
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .ls {
+     padding-left: 150px;
+     margin-top: 150px;
+     font-size: 2rem;
+ }
+
+ .ls span {
+     color: rgb(77, 194, 210);
+ }
+
+ .rs img {
+     margin: 23px 0;
+     padding: 0;
+     box-sizing: border-box;
+     height: 350px;
+ }
+
+ .gray {
+     border: 1px solid;
+     margin: 0 220px;
+     color: rgb(34, 18, 88);
+ }
+
+ /* First Section End  */
+
+
+ /* 2nd Section Start From Here */
+
+ .secondsection {
+     width: 80vw;
+     margin: auto;
+ }
+
+ .text-gray {
+     font-size: 9px;
+     color: gray;
+ }
+ .secondsection{
+    height: auto;
+ }
+ .secondsection h1 {
+     font-size: large;
+ }
+
+ .secondsection .box {
+     width: 80vw;
+     height: 2px;
+     background: white;
+     margin: 60px 0;
+     display: flex;
+
+ }
+
+ .secondsection .vertical {
+     height: 93px;
+     width: 2px;
+     background: white;
+     margin: 0 120px;
+
+ }
+
+ .dev-img {
+     height: 40px;
+     position: relative;
+     top: -46px;
+     left: -17px;
+ }
+
+ .dev-title {
+     position: relative;
+     top: 60px;
+     left: -1px;
+     width: 90px;
+     font-size: 14px;
+ }
+
+ .dev-desc {
+     position: relative;
+     top: 63px;
+     left: -1px;
+     font-size: 9px;
+     width: 90px;
+     bottom: 500px;
+ }
+
+ /* Second Section End Here */
+
+ /* Third section Start Here */
+
+
+ 
+
+
+
+
+
+ 
+ /* Mobile Device */
+
+ @media(max-width:768px){
+    .rightsec ul{
+        display: none;
+    }
+     .firstsec {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }}
+ .ls{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+ }
+ .secondsection .box {
+     width: 80vw;
+     height: 2px;
+     background: white;
+     margin: 60px 0;
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .secondsection .vertical {
+     height: 93px;
+     width: 2px;
+     background: white;
+     margin-bottom: 169px;
+ }
+ .dev-img {
+     height: 40px;
+     position: relative;
+     top: 100px;
+     left: -17px;
+ }
+.dev-title {
+     position: relative;
+     top: 110px;
+     left: -6px;
+     width: 90px;
+     font-size: 14px;
+ }
+  .dev-desc {
+     position: relative;
+     top: 110px;
+     left: -6px;
+     font-size: 9px;
+     width: 90px;
+     bottom: 500px;
+ }
