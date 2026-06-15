@@ -30,12 +30,12 @@ function Contact() {
 
           <div className="info-box">
             <h4>Phone:</h4>
-            <p>0123456789</p>
+            <p>01774046891</p>
           </div>
 
           <div className="info-box">
             <h4>Email:</h4>
-            <p>demo@example.com</p>
+            <p>shakilrana000msr@gmail.com</p>
           </div>
 
           <div className="info-box">
@@ -45,7 +45,7 @@ function Contact() {
 
           <div className="info-box">
             <h4>Address:</h4>
-            <p>Your address goes here.</p>
+            <p>Rangpur City</p>
           </div>
 
 
