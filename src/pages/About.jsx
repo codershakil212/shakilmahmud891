@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./About.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import myCV from "../assets/images/My CV.docx";
 
 const About = () => {
 
@@ -37,9 +38,11 @@ return (
 
 <div className="play-btn">▶</div>
 
-<button className="resume-btn">
-Get Resume ⬇
-</button>
+<a href={myCV} download>
+  <button className="resume-btn">
+    Get Resume ⬇
+  </button>
+</a>
 
 </div>
 
