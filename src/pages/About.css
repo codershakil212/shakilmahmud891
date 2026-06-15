@@ -1,7 +1,18 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+overflow-x:hidden;
+}
+
 .about-page{
 background:#1e2336;
 color:white;
 font-family:serif;
+min-height:100vh;
 }
 
 
@@ -9,7 +20,7 @@ font-family:serif;
 
 .about-hero{
 text-align:center;
-padding:120px 0;
+padding:120px 20px;
 }
 
 .about-hero h1{
@@ -24,6 +35,8 @@ background:#2a2f45;
 padding:12px 25px;
 border-radius:30px;
 font-size:14px;
+flex-wrap:wrap;
+justify-content:center;
 }
 
 .breadcrumb .active{
@@ -38,7 +51,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 gap:80px;
-padding:80px 0;
+padding:80px 20px;
 max-width:1100px;
 margin:auto;
 }
@@ -50,7 +63,8 @@ justify-content:center;
 }
 
 .video-box{
-width:350px;
+width:100%;
+max-width:350px;
 height:350px;
 background:#262b42;
 display:flex;
@@ -58,6 +72,7 @@ flex-direction:column;
 align-items:center;
 justify-content:center;
 gap:40px;
+padding:20px;
 }
 
 .play-btn{
@@ -79,6 +94,12 @@ color:white;
 padding:12px 30px;
 border-radius:30px;
 cursor:pointer;
+transition:.3s;
+}
+
+.resume-btn:hover{
+background:white;
+color:#1e2336;
 }
 
 
@@ -98,30 +119,33 @@ font-size:26px;
 font-weight:400;
 color:#b5b9d6;
 margin-bottom:20px;
+line-height:1.5;
 }
 
 .about-right p{
 color:#9aa0b9;
-line-height:1.7;
+line-height:1.8;
 }
 
 
 /* TIMELINE SECTION */
 
 .timeline-section{
-padding:100px 0;
+padding:100px 20px;
 display:flex;
 flex-direction:column;
 align-items:center;
 }
 
 
-/* TOGGLE BUTTON */
+/* TABS */
 
 .tabs{
 display:flex;
 gap:30px;
 margin-bottom:60px;
+flex-wrap:wrap;
+justify-content:center;
 }
 
 .tabs button{
@@ -131,6 +155,7 @@ border:1px solid #555;
 background:transparent;
 color:white;
 cursor:pointer;
+transition:.3s;
 }
 
 .tabs .active{
@@ -155,6 +180,7 @@ margin-bottom:40px;
 .year{
 color:#9aa0b9;
 width:150px;
+flex-shrink:0;
 }
 
 .details h3{
@@ -164,4 +190,136 @@ font-size:24px;
 
 .details p{
 color:#9aa0b9;
+margin-top:8px;
+}
+
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width:992px){
+
+.about-content{
+gap:40px;
+}
+
+.about-right h2{
+font-size:42px;
+}
+
+.about-right h3{
+font-size:22px;
+}
+
+.about-hero h1{
+font-size:55px;
+}
+
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width:768px){
+
+.about-hero{
+padding:80px 20px;
+}
+
+.about-hero h1{
+font-size:42px;
+}
+
+.about-content{
+flex-direction:column;
+text-align:center;
+gap:40px;
+padding:60px 20px;
+}
+
+.about-right h2{
+font-size:34px;
+}
+
+.about-right h3{
+font-size:20px;
+}
+
+.video-box{
+height:300px;
+}
+
+.tabs{
+flex-direction:column;
+width:100%;
+gap:15px;
+}
+
+.tabs button{
+width:100%;
+font-size:18px;
+padding:15px;
+}
+
+.timeline-item{
+flex-direction:column;
+text-align:center;
+gap:10px;
+}
+
+.year{
+width:100%;
+}
+
+}
+
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width:480px){
+
+.about-hero h1{
+font-size:32px;
+}
+
+.about-right h2{
+font-size:28px;
+}
+
+.about-right h3{
+font-size:18px;
+}
+
+.about-right p{
+font-size:14px;
+}
+
+.video-box{
+height:260px;
+}
+
+.play-btn{
+width:60px;
+height:60px;
+font-size:18px;
+}
+
+.resume-btn{
+padding:10px 24px;
+font-size:14px;
+}
+
+.tabs button{
+font-size:16px;
+}
+
+.details h3{
+font-size:20px;
+}
+
 }
